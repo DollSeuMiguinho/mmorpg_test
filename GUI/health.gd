@@ -1,0 +1,15 @@
+extends ColorRect
+
+@onready var value = $Value
+
+func update_hp_ui(hp,max_hp):
+	value.size = Vector2(98*(hp/max_hp),8)
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
